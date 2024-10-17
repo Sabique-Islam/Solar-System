@@ -1,0 +1,313 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: url(Bg.jpg) no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sun Styling */
+.sun {
+    height: 125px;
+    width: 125px;
+    background: radial-gradient(circle, #f9d71c, #f08d0f);
+    border-radius: 50%;
+    box-shadow: 0 0 50px 20px rgba(249, 215, 28, 0.5), 0 0 100px 50px rgba(249, 215, 28, 0.3);
+    animation: pulse 5s infinite alternate;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Pulsing Effect for the Sun */
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.85);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+}
+
+.mercury {
+    height: 30px;
+    width: 30px;
+    background-image: url(8.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #f9c05f;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit2 5s linear infinite;
+}
+
+@keyframes orbit2 {
+    from {
+        transform: rotate(0deg) translateX(80px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(80px) rotate(-360deg);
+    }
+}
+
+.venus {
+    height: 40px;
+    width: 40px;
+    background-image: url(4.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #a36f13;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit3 8s linear infinite;
+}
+
+@keyframes orbit3 {
+    from {
+        transform: rotate(0deg) translateX(120px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    }
+}
+
+.earth {
+    height: 50px;
+    width: 50px;
+    background-image: url(5.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #2855d6;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit4 12s linear infinite;
+}
+
+/* Earth Orbit */
+@keyframes orbit4 {
+    from {
+        transform: rotate(0deg) translateX(160px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(160px) rotate(-360deg);
+    }
+}
+
+/* Mars Styling */
+.mars {
+    height: 40px;
+    width: 40px;
+    background-image: url(1.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #ca0505;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit6 16s linear infinite;
+}
+
+/* Mars Orbit */
+@keyframes orbit6 {
+    from {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+}
+
+/* Jupiter Styling */
+.jupiter {
+    height: 60px;
+    width: 60px;
+    background-image: url(10.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #cac2b9;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit7 30s linear infinite;
+}
+
+/* Jupiter Orbit */
+@keyframes orbit7 {
+    from {
+        transform: rotate(0deg) translateX(300px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    }
+}
+
+/* Saturn Styling */
+.saturn {
+    height: 70px;
+    width: 70px;
+    background-image: url(7.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #f4b183;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit9 40s linear infinite;
+}
+
+/* Saturn Orbit */
+@keyframes orbit9 {
+    from {
+        transform: rotate(0deg) translateX(400px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(400px) rotate(-360deg);
+    }
+}
+
+/* Uranus Styling */
+.uranus {
+    height: 50px;
+    width: 50px;
+    background-image: url(9.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #87d6e4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit10 50s linear infinite;
+}
+
+/* Uranus Orbit */
+@keyframes orbit10 {
+    from {
+        transform: rotate(0deg) translateX(450px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(450px) rotate(-360deg);
+    }
+}
+
+/* Neptune Styling */
+.neptune {
+    height: 50px;
+    width: 50px;
+    background-image: url(6.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #9581c1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit11 70s linear infinite;
+}
+
+/* Neptune Orbit */
+@keyframes orbit11 {
+    from {
+        transform: rotate(0deg) translateX(500px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(500px) rotate(-360deg);
+    }
+}
+
+/* Comet Styling */
+.comet {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ffffff, #bbbbbb);
+    border-radius: 50%;
+    box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.7);
+    animation: cometFly 6s ease-in-out infinite;
+    opacity: 0;
+}
+
+/* Comet Animation */
+@keyframes cometFly {
+    0% {
+        top: -50px;
+        left: -50px;
+        opacity: 1;
+        transform: scale(0.8);
+    }
+
+    10% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    40% {
+        top: 300px;
+        left: 800px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 600px;
+        left: 1600px;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/* Additional Styling for Planet Labels */
+p {
+    color: #f0f0f0;
+    font-size: 0.9em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: -10px;
+    top: -20px;
+}
+
+/* Create a random comet */
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Keyframes for Comet Appearance */
+.comet-animation {
+    animation: appear 6s forwards;
+}
